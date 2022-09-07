@@ -1,5 +1,5 @@
 import pymysql
-
+#获取数据库
 db = pymysql.connect(host='localhost', user='root', password='root', port=3306)
 cursor = db.cursor()
 cursor.execute('SELECT VERSION()')
